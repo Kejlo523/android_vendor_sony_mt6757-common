@@ -1,5 +1,6 @@
 # Trim Area CCCI service
 service ta_ccci_service /system/vendor/bin/ta_ccci_service
     user root
-    seclabel u:r:ta_ccci_service:s0
+    # The Oreo domain is absent from the Android 10 policy.  The device runs
+    # permissive, so let init launch this legacy service in its own context.
     disabled

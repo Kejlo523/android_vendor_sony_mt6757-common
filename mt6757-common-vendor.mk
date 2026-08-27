@@ -26,13 +26,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/bin/audiocmdservice_atci:system/bin/audiocmdservice_atci \
     vendor/sony/mt6757-common/proprietary/bin/boot_logo_updater:system/bin/boot_logo_updater \
     vendor/sony/mt6757-common/proprietary/bin/charge_logging:system/bin/charge_logging \
-    vendor/sony/mt6757-common/proprietary/bin/clatd:system/bin/clatd \
     vendor/sony/mt6757-common/proprietary/bin/display_color_calib:system/bin/display_color_calib \
     vendor/sony/mt6757-common/proprietary/bin/dm_agent_binder:system/bin/dm_agent_binder \
     vendor/sony/mt6757-common/proprietary/bin/em_svr:system/bin/em_svr \
     vendor/sony/mt6757-common/proprietary/bin/exfatdebug:system/bin/exfatdebug \
     vendor/sony/mt6757-common/proprietary/bin/exfatinfo:system/bin/exfatinfo \
-    vendor/sony/mt6757-common/proprietary/bin/exfatlabel:system/bin/exfatlabel \
     vendor/sony/mt6757-common/proprietary/bin/exfatvsn:system/bin/exfatvsn \
     vendor/sony/mt6757-common/proprietary/bin/factory:system/bin/factory \
     vendor/sony/mt6757-common/proprietary/bin/font-selector-make-dir.sh:system/bin/font-selector-make-dir.sh \
@@ -41,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/bin/kpoc_charger:system/bin/kpoc_charger \
     vendor/sony/mt6757-common/proprietary/bin/lcdc_screen_cap:system/bin/lcdc_screen_cap \
     vendor/sony/mt6757-common/proprietary/bin/led_service:system/bin/led_service \
-    vendor/sony/mt6757-common/proprietary/bin/mdnsd:system/bin/mdnsd \
     vendor/sony/mt6757-common/proprietary/bin/meta_tst:system/bin/meta_tst \
     vendor/sony/mt6757-common/proprietary/bin/mkexfat:system/bin/mkexfat \
     vendor/sony/mt6757-common/proprietary/bin/multi-cdf-symlinker.sh:system/bin/multi-cdf-symlinker.sh \
@@ -75,7 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/etc/init/sn.rc:system/etc/init/sn.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/terserver.rc:system/etc/init/terserver.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/thermalindicator.rc:system/etc/init/thermalindicator.rc \
-    vendor/sony/mt6757-common/proprietary/etc/media_profiles_V1_0.dtd:system/etc/media_profiles_V1_0.dtd \
     vendor/sony/mt6757-common/proprietary/etc/nfcse_access.xml:system/etc/nfcse_access.xml \
     vendor/sony/mt6757-common/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
     vendor/sony/mt6757-common/proprietary/etc/post-fs-data-fota.sh:system/etc/post-fs-data-fota.sh \
@@ -89,12 +85,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib/libaal_cust.so:system/lib/libaal_cust.so \
     vendor/sony/mt6757-common/proprietary/lib/libaalservice.so:system/lib/libaalservice.so \
     vendor/sony/mt6757-common/proprietary/lib/libaed.so:system/lib/libaed.so \
-    vendor/sony/mt6757-common/proprietary/lib/libandroid_net.so:system/lib/libandroid_net.so \
     vendor/sony/mt6757-common/proprietary/lib/libatciserv_jni.so:system/lib/libatciserv_jni.so \
     vendor/sony/mt6757-common/proprietary/lib/libaudio_param_parser-sys.so:system/lib/libaudio_param_parser-sys.so \
-    vendor/sony/mt6757-common/proprietary/lib/libblas.so:system/lib/libblas.so \
-    vendor/sony/mt6757-common/proprietary/lib/libcamera2ndk.so:system/lib/libcamera2ndk.so \
-    vendor/sony/mt6757-common/proprietary/lib/libcap.so:system/lib/libcap.so \
     vendor/sony/mt6757-common/proprietary/lib/libccap.so:system/lib/libccap.so \
     vendor/sony/mt6757-common/proprietary/lib/libcei_sensor_jni.so:system/lib/libcei_sensor_jni.so \
     vendor/sony/mt6757-common/proprietary/lib/libcustom_prop.so:system/lib/libcustom_prop.so \
@@ -109,7 +101,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib/libem_support_jni.so:system/lib/libem_support_jni.so \
     vendor/sony/mt6757-common/proprietary/lib/libem_usb_jni.so:system/lib/libem_usb_jni.so \
     vendor/sony/mt6757-common/proprietary/lib/libem_wifi_jni.so:system/lib/libem_wifi_jni.so \
-    vendor/sony/mt6757-common/proprietary/lib/libfmjni.so:system/lib/libfmjni.so \
     vendor/sony/mt6757-common/proprietary/lib/libfpc_oem.so:system/lib/libfpc_oem.so \
     vendor/sony/mt6757-common/proprietary/lib/libfpspolicy_fw.so:system/lib/libfpspolicy_fw.so \
     vendor/sony/mt6757-common/proprietary/lib/libfrpflag.so:system/lib/libfrpflag.so \
@@ -120,12 +111,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib/libiddjni.so:system/lib/libiddjni.so \
     vendor/sony/mt6757-common/proprietary/lib/libjni_lomoeffect.so:system/lib/libjni_lomoeffect.so \
     vendor/sony/mt6757-common/proprietary/lib/libjni_pq.so:system/lib/libjni_pq.so \
-    vendor/sony/mt6757-common/proprietary/lib/libldacBT_abr.so:system/lib/libldacBT_abr.so \
-    vendor/sony/mt6757-common/proprietary/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
     vendor/sony/mt6757-common/proprietary/lib/liblights-core.so:system/lib/liblights-core.so \
     vendor/sony/mt6757-common/proprietary/lib/libmediatek_exceptionlog.so:system/lib/libmediatek_exceptionlog.so \
     vendor/sony/mt6757-common/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
-    vendor/sony/mt6757-common/proprietary/lib/libnbaio.so:system/lib/libnbaio.so \
     vendor/sony/mt6757-common/proprietary/lib/libpq_cust.so:system/lib/libpq_cust.so \
     vendor/sony/mt6757-common/proprietary/lib/libprogrambinary.so:system/lib/libprogrambinary.so \
     vendor/sony/mt6757-common/proprietary/lib/libshowlogo.so:system/lib/libshowlogo.so \
@@ -144,7 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib/vendor.mediatek.hardware.nvram@1.0.so:system/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib/vendor.mediatek.hardware.power@1.1.so:system/lib/vendor.mediatek.hardware.power@1.1.so \
     vendor/sony/mt6757-common/proprietary/lib/vendor.mediatek.hardware.pq@2.0.so:system/lib/vendor.mediatek.hardware.pq@2.0.so \
-    vendor/sony/mt6757-common/proprietary/lib/vendor.nxp.nxpnfc@1.0.so:system/lib/vendor.nxp.nxpnfc@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib/vendor.semc.hardware.secd@1.0.so:system/lib/vendor.semc.hardware.secd@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib/vendor.semc.system.idd.fallback@1.0.so:system/lib/vendor.semc.system.idd.fallback@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib/vendor.semc.system.idd@1.0.so:system/lib/vendor.semc.system.idd@1.0.so \
@@ -161,7 +148,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/sony/mt6757-common/proprietary/lib64/libatciserv_jni.so:system/lib64/libatciserv_jni.so \
     vendor/sony/mt6757-common/proprietary/lib64/libaudio_param_parser-sys.so:system/lib64/libaudio_param_parser-sys.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libcap.so:system/lib64/libcap.so \
     vendor/sony/mt6757-common/proprietary/lib64/libccap.so:system/lib64/libccap.so \
     vendor/sony/mt6757-common/proprietary/lib64/libcustom_prop.so:system/lib64/libcustom_prop.so \
     vendor/sony/mt6757-common/proprietary/lib64/libdatawasherjni_system.so:system/lib64/libdatawasherjni_system.so \
@@ -173,7 +159,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib64/libem_support_jni.so:system/lib64/libem_support_jni.so \
     vendor/sony/mt6757-common/proprietary/lib64/libem_usb_jni.so:system/lib64/libem_usb_jni.so \
     vendor/sony/mt6757-common/proprietary/lib64/libem_wifi_jni.so:system/lib64/libem_wifi_jni.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libfmjni.so:system/lib64/libfmjni.so \
     vendor/sony/mt6757-common/proprietary/lib64/libfpc_oem.so:system/lib64/libfpc_oem.so \
     vendor/sony/mt6757-common/proprietary/lib64/libfpspolicy_fw.so:system/lib64/libfpspolicy_fw.so \
     vendor/sony/mt6757-common/proprietary/lib64/libfrpflag.so:system/lib64/libfrpflag.so \
@@ -186,12 +171,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib64/libjni_lomoeffect.so:system/lib64/libjni_lomoeffect.so \
     vendor/sony/mt6757-common/proprietary/lib64/libjni_pq.so:system/lib64/libjni_pq.so \
     vendor/sony/mt6757-common/proprietary/lib64/libkmsetkey.so:system/lib64/libkmsetkey.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
     vendor/sony/mt6757-common/proprietary/lib64/liblights-core.so:system/lib64/liblights-core.so \
     vendor/sony/mt6757-common/proprietary/lib64/libmediatek_exceptionlog.so:system/lib64/libmediatek_exceptionlog.so \
     vendor/sony/mt6757-common/proprietary/lib64/libmrdump.so:system/lib64/libmrdump.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libnbaio.so:system/lib64/libnbaio.so \
     vendor/sony/mt6757-common/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
     vendor/sony/mt6757-common/proprietary/lib64/libprogrambinary.so:system/lib64/libprogrambinary.so \
     vendor/sony/mt6757-common/proprietary/lib64/libterservice.so:system/lib64/libterservice.so \
@@ -209,7 +191,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.mediatek.hardware.power@1.1.so:system/lib64/vendor.mediatek.hardware.power@1.1.so \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.mediatek.hardware.pq@2.0.so:system/lib64/vendor.mediatek.hardware.pq@2.0.so \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.mediatek.hardware.radio@1.1.so:system/lib64/vendor.mediatek.hardware.radio@1.1.so \
-    vendor/sony/mt6757-common/proprietary/lib64/vendor.nxp.nxpnfc@1.0.so:system/lib64/vendor.nxp.nxpnfc@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.semc.hardware.secd@1.0.so:system/lib64/vendor.semc.hardware.secd@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.semc.system.idd.fallback@1.0.so:system/lib64/vendor.semc.system.idd.fallback@1.0.so \
     vendor/sony/mt6757-common/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
@@ -288,7 +269,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.power@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.power@1.1-service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.0-service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.mediatek.hardware.wfo@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.wfo@1.0-service \
-    vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.nxp.nxpnfc@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.nxpnfc@1.0-service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.semc.hardware.secd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.hardware.secd@1.0-service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.semc.system.idd.fallback@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.system.idd.fallback@1.0-service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/hw/vendor.semc.system.idd@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.semc.system.idd@1.0-service \
@@ -588,7 +568,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.power@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.power@1.1-service.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.wfo@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.wfo@1.0-service.rc \
-    vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.nxp.nxpnfc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.nxpnfc@1.0-service.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.semc.hardware.secd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.hardware.secd@1.0-service.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.semc.system.idd.fallback@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.system.idd.fallback@1.0-service.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/vendor.semc.system.idd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.semc.system.idd@1.0-service.rc \
@@ -618,7 +597,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/etc/mddb/MDDB_InfoCustomAppSrcP_MT6757_S00_MOLY_LR11_W1630_MD_TC9_CAF_SP_V1_P11_1_ulwctg_n.EDB:$(TARGET_COPY_OUT_VENDOR)/etc/mddb/MDDB_InfoCustomAppSrcP_MT6757_S00_MOLY_LR11_W1630_MD_TC9_CAF_SP_V1_P11_1_ulwctg_n.EDB \
     vendor/sony/mt6757-common/proprietary/vendor/etc/mddb/mdm_layout_desc_1_ulwctg_n.dat:$(TARGET_COPY_OUT_VENDOR)/etc/mddb/mdm_layout_desc_1_ulwctg_n.dat \
     vendor/sony/mt6757-common/proprietary/vendor/etc/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
-    vendor/sony/mt6757-common/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
     vendor/sony/mt6757-common/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/sony/mt6757-common/proprietary/vendor/etc/nfcee_access.xml:$(TARGET_COPY_OUT_VENDOR)/etc/nfcee_access.xml \
     vendor/sony/mt6757-common/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
@@ -951,14 +929,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl-mediatek.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.4-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.4-impl-mediatek.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.light@2.0-impl-mediatek.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.sensors@1.0-impl-mediatek.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio.primary.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6757.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio.usb.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.mt6757.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/flp.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/flp.mt6757.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/gps.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.mt6757.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/gralloc.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.mt6757.so \
@@ -981,7 +954,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/hw/vendor.nxp.nxpnfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.nxp.nxpnfc@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.gma.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.lce.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
@@ -1240,7 +1212,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/librilutilsmtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilutilsmtk.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/librrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librrc.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libsec_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec_mem.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimaka.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-ss.so \
@@ -1255,7 +1226,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libtee.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtee.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtlcWidevineModularDrm.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libtplay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtplay.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
@@ -1275,8 +1245,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libwvhdcpext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhdcpext.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libmockdrmcryptoplugin.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/mtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/mtk-ril.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/mtk-rilproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/mtk-rilproxy.so \
@@ -1284,7 +1252,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib/sensors.mtk-redwood.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.mtk-redwood.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/sensors.mtk-teak.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.mtk-teak.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/sensors.smd.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.smd.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/vendor.mediatek.hardware.audio@2.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@2.1_vendor.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth@1.1_vendor.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib/vendor.mediatek.hardware.camera.device@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.device@1.1_vendor.so \
@@ -1304,14 +1271,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.4-impl-mediatek.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.light@2.0-impl-mediatek.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio.primary.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6757.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio.usb.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.mt6757.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio_policy.stub.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/flp.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/flp.mt6757.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/gps.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.mt6757.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/gralloc.mt6757.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.mt6757.so \
@@ -1333,7 +1295,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/hw/vendor.nxp.nxpnfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.nxp.nxpnfc@1.0-impl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.gma.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.lce.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.log.so \
@@ -1486,8 +1447,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_ulit.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libjni_mdm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_mdm.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libm4u.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libm4u.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libmal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmal.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libmal_datamngr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmal_datamngr.so \
@@ -1561,7 +1520,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/librilproxyutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilproxyutils.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/librilutilsmtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilutilsmtk.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libsec_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_mem.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimaka.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libssl-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-ss.so \
@@ -1573,7 +1531,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libta.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libtee.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtee.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlcWidevineModularDrm.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libtplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtplay.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
@@ -1585,8 +1542,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/mtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk-ril.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/mtk-rilproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk-rilproxy.so \
@@ -1594,7 +1549,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/sensors.mtk-redwood.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mtk-redwood.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/sensors.mtk-teak.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.mtk-teak.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/sensors.smd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.smd.so \
-    vendor/sony/mt6757-common/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@2.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@2.1_vendor.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth@1.1_vendor.so \
     vendor/sony/mt6757-common/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.device@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.device@1.1_vendor.so \

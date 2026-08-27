@@ -2,3 +2,7 @@ service thermal /vendor/bin/thermal
     class main
     user system
     group system
+    # This legacy daemon polls the modem with AT+ETHERMAL. On the XA1 Android 8
+    # modem that command wedges the mux channel and eventually asserts MD1.
+    # CPU/battery protection remains provided by thermald and the Thermal HAL.
+    disabled

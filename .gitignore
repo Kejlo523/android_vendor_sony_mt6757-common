@@ -1,0 +1,2 @@
+# Local binary-patching checkpoints; the active blob remains versioned.
+proprietary/vendor/lib64/mtk-ril.so.*

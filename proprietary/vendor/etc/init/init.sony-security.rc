@@ -9,7 +9,7 @@
 
 # Start Security Daemon
 on post-fs-data
-    mkdir /data/credmgr 0770 system credmgr_client
+    mkdir /data/credmgr 0770 system vendor_credmgr_client
     mkdir /persist/pc 0770 radio system
 
 
@@ -42,5 +42,5 @@ service scdnotifier_nitz /system/bin/scdnotifier nitz
 # Allows other system application to use tpm from java
 service tpm-service /system/bin/tpm-service
     class late_start
-    user tpm
-    group system tpm trimarea drmrpc
+    user vendor_tpm
+    group system vendor_tpm vendor_trimarea drmrpc

@@ -1,9 +1,9 @@
 service atcid-daemon-u /system/bin/atcid
     class main
     socket adb_atci_socket stream 660 radio system
+    setenv LD_PRELOAD /system/lib64/libshim_atcid_radio.so
     user system
     group radio system media
-    disabled
     oneshot
 
 service atcid-daemon-e /system/bin/atcid
@@ -19,3 +19,8 @@ start atcid-daemon-e
 
 on property:persist.service.atci.autostart=1
 start atcid-daemon-u
+
+# Allow the framework radio process to suspend periodic +ECSQ reports while
+# the screen is off.  Access remains restricted by the radio/system socket.
+on boot
+    setprop persist.service.atci.usermode 1

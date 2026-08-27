@@ -10,4 +10,4 @@ service startup-prober /vendor/bin/startup-prober
     user root
     oneshot
     disabled
-    group trimarea drmrpc system credmgr_client
+    group vendor_trimarea drmrpc system vendor_credmgr_client

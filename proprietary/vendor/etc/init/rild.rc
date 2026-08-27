@@ -23,5 +23,7 @@ service ril-daemon-mtk /vendor/bin/mtkrild
     disabled
     oneshot
 
+# Start the vendor RIL early so its private modem boot sequence runs without
+# Android telephony requests competing for the same legacy AT command queues.
 on property:ril.mtk=1
     start ril-daemon-mtk

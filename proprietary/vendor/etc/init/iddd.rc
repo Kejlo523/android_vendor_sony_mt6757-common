@@ -8,25 +8,26 @@
 #
 on fs
     # SONY: setup idd and rca partition
-    chown idd idd /idd
+    chown vendor_idd vendor_idd /idd
     chmod 0751 /idd
     symlink /idd /mnt/idd
-    chown idd idd /rca
+    chown vendor_idd vendor_idd /rca
     chmod 0750 /rca
     symlink /rca /mnt/rca
 
 on post-fs-data
     mkdir idd/lost+found 0770 root root
-    mkdir idd/output 0755 idd idd
-    mkdir idd/socket 0711 idd idd
-    mkdir idd/private 0700 idd idd
-    mkdir idd/input 0755 idd idd
+    mkdir idd/output 0755 vendor_idd vendor_idd
+    mkdir idd/socket 0711 vendor_idd vendor_idd
+    mkdir idd/private 0700 vendor_idd vendor_idd
+    mkdir idd/input 0755 vendor_idd vendor_idd
     exec u:r:restorecon:s0 -- /vendor/bin/restorecon -RF /idd
-    mkdir rca/plugins 0750 idd idd
+    mkdir rca/plugins 0750 vendor_idd vendor_idd
     exec u:r:restorecon:s0 -- /vendor/bin/restorecon -RF /rca
 
 # Start idd native service
 service iddd /vendor/bin/iddd
     class core
-    user idd
-    group idd log inet trimarea
+    disabled
+    user vendor_idd
+    group vendor_idd log inet vendor_trimarea

@@ -1,8 +1,10 @@
 on post-fs-data
     mkdir /data/agps_supl 0771 gps system
+    symlink /oem/android-config/agps_profiles_conf2.xml /data/agps_supl/agps_profiles_conf2.xml
 
 service agpsd /vendor/bin/mtk_agpsd
     class main
+    setenv LD_PRELOAD /system/lib/libutilscallstack.so:/vendor/lib/libshim_agps_ssl.so
     socket agpsd stream 660 gps system
     socket agpsd2 stream 660 gps inet
     socket agpsd3 stream 660 gps inet

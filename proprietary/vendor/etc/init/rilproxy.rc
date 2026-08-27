@@ -1,5 +1,6 @@
 service ril-proxy /vendor/bin/hw/rilproxy -l mtk-rilproxy.so
     class core
+    setenv LD_PRELOAD /system/lib64/libutilscallstack.so
     socket rild stream 660 root radio
     socket rild2 stream 660 root radio
     socket rild3 stream 660 root radio
@@ -16,5 +17,6 @@ service ril-proxy /vendor/bin/hw/rilproxy -l mtk-rilproxy.so
     oneshot
     disabled
 
+# ril.rilproxy is published by the MTK stack after its private daemon is ready.
 on property:ril.rilproxy=1
     start ril-proxy
