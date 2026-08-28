@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/bin/atci_service:system/bin/atci_service \
     vendor/sony/mt6757-common/proprietary/bin/atcid:system/bin/atcid \
     vendor/sony/mt6757-common/proprietary/bin/audiocmdservice_atci:system/bin/audiocmdservice_atci \
-    vendor/sony/mt6757-common/proprietary/bin/boot_logo_updater:system/bin/boot_logo_updater \
     vendor/sony/mt6757-common/proprietary/bin/charge_logging:system/bin/charge_logging \
     vendor/sony/mt6757-common/proprietary/bin/display_color_calib:system/bin/display_color_calib \
     vendor/sony/mt6757-common/proprietary/bin/dm_agent_binder:system/bin/dm_agent_binder \
@@ -45,8 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/bin/nvram_write:system/bin/nvram_write \
     vendor/sony/mt6757-common/proprietary/bin/ota-config-updater.sh:system/bin/ota-config-updater.sh \
     vendor/sony/mt6757-common/proprietary/bin/pl_calibration:system/bin/pl_calibration \
-    vendor/sony/mt6757-common/proprietary/bin/program_binary_builder:system/bin/program_binary_builder \
-    vendor/sony/mt6757-common/proprietary/bin/program_binary_service:system/bin/program_binary_service \
     vendor/sony/mt6757-common/proprietary/bin/qns:system/bin/qns \
     vendor/sony/mt6757-common/proprietary/bin/sn:system/bin/sn \
     vendor/sony/mt6757-common/proprietary/bin/terservice:system/bin/terservice \
@@ -61,14 +58,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/etc/init/atci_service.rc:system/etc/init/atci_service.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/atcid.rc:system/etc/init/atcid.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/audiocmdservice_atci.rc:system/etc/init/audiocmdservice_atci.rc \
-    vendor/sony/mt6757-common/proprietary/etc/init/bootlogoupdater.rc:system/etc/init/bootlogoupdater.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/dm_agent_binder.rc:system/etc/init/dm_agent_binder.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/em_svr.rc:system/etc/init/em_svr.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/ged_srv.rc:system/etc/init/ged_srv.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/init.smime.rc:system/etc/init/init.smime.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/init.thermald.rc:system/etc/init/init.thermald.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/kpoc_charger.rc:system/etc/init/kpoc_charger.rc \
-    vendor/sony/mt6757-common/proprietary/etc/init/program_binary_service.rc:system/etc/init/program_binary_service.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/sn.rc:system/etc/init/sn.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/terserver.rc:system/etc/init/terserver.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/thermalindicator.rc:system/etc/init/thermalindicator.rc \
@@ -115,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib/libmediatek_exceptionlog.so:system/lib/libmediatek_exceptionlog.so \
     vendor/sony/mt6757-common/proprietary/lib/libmrdump.so:system/lib/libmrdump.so \
     vendor/sony/mt6757-common/proprietary/lib/libpq_cust.so:system/lib/libpq_cust.so \
-    vendor/sony/mt6757-common/proprietary/lib/libprogrambinary.so:system/lib/libprogrambinary.so \
     vendor/sony/mt6757-common/proprietary/lib/libshowlogo.so:system/lib/libshowlogo.so \
     vendor/sony/mt6757-common/proprietary/lib/libtpm.so:system/lib/libtpm.so \
     vendor/sony/mt6757-common/proprietary/lib/libui_ext_fwk.so:system/lib/libui_ext_fwk.so \
@@ -175,7 +169,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/lib64/libmediatek_exceptionlog.so:system/lib64/libmediatek_exceptionlog.so \
     vendor/sony/mt6757-common/proprietary/lib64/libmrdump.so:system/lib64/libmrdump.so \
     vendor/sony/mt6757-common/proprietary/lib64/libpq_cust.so:system/lib64/libpq_cust.so \
-    vendor/sony/mt6757-common/proprietary/lib64/libprogrambinary.so:system/lib64/libprogrambinary.so \
     vendor/sony/mt6757-common/proprietary/lib64/libterservice.so:system/lib64/libterservice.so \
     vendor/sony/mt6757-common/proprietary/lib64/libtpm.so:system/lib64/libtpm.so \
     vendor/sony/mt6757-common/proprietary/lib64/libui_ext_fwk.so:system/lib64/libui_ext_fwk.so \
@@ -307,7 +300,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/bin/sysenv_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/sysenv_daemon \
     vendor/sony/mt6757-common/proprietary/vendor/bin/ta_ccci_service:$(TARGET_COPY_OUT_VENDOR)/bin/ta_ccci_service \
     vendor/sony/mt6757-common/proprietary/vendor/bin/taimport:$(TARGET_COPY_OUT_VENDOR)/bin/taimport \
-    vendor/sony/mt6757-common/proprietary/vendor/bin/tbase_helperd:$(TARGET_COPY_OUT_VENDOR)/bin/tbase_helperd \
     vendor/sony/mt6757-common/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
     vendor/sony/mt6757-common/proprietary/vendor/bin/thermal_manager:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_manager \
     vendor/sony/mt6757-common/proprietary/vendor/bin/thermalloadalgod:$(TARGET_COPY_OUT_VENDOR)/bin/thermalloadalgod \
@@ -532,7 +524,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.secd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.secd.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.sony-security.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sony-security.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.taccci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.taccci.rc \
-    vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.tbase_helperd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.tbase_helperd.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/sony/mt6757-common/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
