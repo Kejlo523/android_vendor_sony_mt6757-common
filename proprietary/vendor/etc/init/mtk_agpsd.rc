@@ -1,6 +1,7 @@
 on post-fs-data
     mkdir /data/agps_supl 0771 gps system
     symlink /oem/android-config/agps_profiles_conf2.xml /data/agps_supl/agps_profiles_conf2.xml
+    restorecon_recursive /data/agps_supl
 
 service agpsd /vendor/bin/mtk_agpsd
     class main

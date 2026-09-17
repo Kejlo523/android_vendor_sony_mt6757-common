@@ -20,6 +20,12 @@ start atcid-daemon-e
 on property:persist.service.atci.autostart=1
 start atcid-daemon-u
 
+# The framework does not set persist.service.atci.autostart on userdebug
+# builds.  Start the user-mode ATCI endpoint once the RIL proxy is ready so
+# radio signal-reporting commands can reach the modem without manual action.
+on property:ril.rilproxy=1
+start atcid-daemon-u
+
 # Allow the framework radio process to suspend periodic +ECSQ reports while
 # the screen is off.  Access remains restricted by the radio/system socket.
 on boot

@@ -1,6 +1,7 @@
 # Trim Area CCCI service
 service ta_ccci_service /system/vendor/bin/ta_ccci_service
     user root
-    # The Oreo domain is absent from the Android 10 policy.  The device runs
-    # permissive, so let init launch this legacy service in its own context.
+    # CCCI is radio:radio 0660; tad is system:vendor_trimarea 0770.
+    group radio vendor_trimarea
+    # Keep the Oreo daemon isolated in its own enforcing domain.
     disabled

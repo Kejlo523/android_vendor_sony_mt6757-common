@@ -3,10 +3,16 @@ on early-init
 
 on post-fs-data
 
+    # This Oreo vendor mounts the modem NVRAM at /nvdata and exposes the
+    # historical /data/nvram symlink.  Relabel both before ccci starts.
+    restorecon_recursive /nvdata
+    restorecon /data/nvram
+
     # Modem related device nodes
     mkdir /data/nvram/md  0770 root system
     mkdir /data/nvram/md3  0770 root system
     mkdir /data/md3	0770 root system
+    restorecon_recursive /nvdata
 #  Build-in Modified - S
 #    insmod /vendor/lib/modules/ccci_plat.ko
 #    insmod /vendor/lib/modules/ccci.ko
@@ -14,9 +20,9 @@ on post-fs-data
 #   chown radio radio /sys/class/BOOT/BOOT/boot/md
     chown radio radio /sys/kernel/ccci/boot
 
-#SeLinux
+    #SeLinux
     mkdir /data/ccci_cfg 0770 system radio
-    restorecon /data/ccci_cfg
+    restorecon_recursive /data/ccci_cfg
 
 service ccci_mdinit /vendor/bin/ccci_mdinit 0
     user system
@@ -29,4 +35,3 @@ service ccci3_mdinit /vendor/bin/ccci_mdinit 2
     group radio system
     class core
     oneshot
-

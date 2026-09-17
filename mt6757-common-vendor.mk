@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/bin/ota-config-updater.sh:system/bin/ota-config-updater.sh \
     vendor/sony/mt6757-common/proprietary/bin/pl_calibration:system/bin/pl_calibration \
     vendor/sony/mt6757-common/proprietary/bin/qns:system/bin/qns \
-    vendor/sony/mt6757-common/proprietary/bin/sn:system/bin/sn \
     vendor/sony/mt6757-common/proprietary/bin/terservice:system/bin/terservice \
     vendor/sony/mt6757-common/proprietary/bin/tertestclient:system/bin/tertestclient \
     vendor/sony/mt6757-common/proprietary/bin/thermald:system/bin/thermald \
@@ -64,7 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/mt6757-common/proprietary/etc/init/init.smime.rc:system/etc/init/init.smime.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/init.thermald.rc:system/etc/init/init.thermald.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/kpoc_charger.rc:system/etc/init/kpoc_charger.rc \
-    vendor/sony/mt6757-common/proprietary/etc/init/sn.rc:system/etc/init/sn.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/terserver.rc:system/etc/init/terserver.rc \
     vendor/sony/mt6757-common/proprietary/etc/init/thermalindicator.rc:system/etc/init/thermalindicator.rc \
     vendor/sony/mt6757-common/proprietary/etc/nfcse_access.xml:system/etc/nfcse_access.xml \

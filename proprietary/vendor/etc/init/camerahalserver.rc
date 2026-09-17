@@ -1,5 +1,6 @@
 service camerahalserver /vendor/bin/hw/camerahalserver
     class main
+    disabled
     user cameraserver
     group audio camera input drmrpc sdcard_rw system media
     ioprio rt 4
